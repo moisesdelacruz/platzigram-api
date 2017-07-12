@@ -26,5 +26,16 @@ export default {
       this.getImage(),
       this.getImage()
     ]
+  },
+
+  getUser () {
+    return {
+      id: 'e8fa88c0-5b6f-4842-bb15-2febb834345c',
+      name: 'Freddy Vega',
+      username: 'freddier',
+      email: 'f@platzi.test',
+      password: 'pl4tzi',
+      createdAt: new Date().toString()
+    }
   }
 }
