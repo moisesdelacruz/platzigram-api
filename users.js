@@ -16,7 +16,8 @@ if (env === 'test') {
 const hash = HttpHash()
 
 hash.set('POST /', async function saveUser (req, res, params) {
-  let user = json(req)
+  let user = await json(req)
+
   await db.connect()
   let created = await db.saveUser(user)
   await db.disconnect()
