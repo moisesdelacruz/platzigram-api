@@ -19,7 +19,7 @@ const hash = HttpHash()
 hash.set('POST /', async function authentication (req, res, params) {
   let credentials = await json(req)
   await db.connect()
-  let auth = await db.authentication(credentials.username, credentials.password)
+  let auth = await db.authenticate(credentials.username, credentials.password)
 
   if (!auth) {
     return send(res, 401, { error: 'invalid credentials' })

@@ -42,7 +42,7 @@ export default class Db {
     return Promise.resolve(fixtures.getUser())
   }
 
-  authentication (username, password) {
+  authenticate (username, password) {
     return Promise.resolve(true)
   }
 }
