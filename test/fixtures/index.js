@@ -31,6 +31,7 @@ export default {
   getUser () {
     return {
       id: 'e8fa88c0-5b6f-4842-bb15-2febb834345c',
+      avatar: '//www.gravatar.com/avatar/762e139d10e38724b63bec46da9b7dd5',
       name: 'Freddy Vega',
       username: 'freddier',
       email: 'f@platzi.test',
