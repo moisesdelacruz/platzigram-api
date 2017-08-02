@@ -26,7 +26,7 @@ hash.set('POST /', async function authentication (req, res, params) {
   }
 
   let token = await utils.signToken({
-    username: credentials.username
+    userId: credentials.username
   }, config.secret)
 
   send(res, 200, token)
